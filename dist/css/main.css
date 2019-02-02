@@ -165,7 +165,7 @@ main {
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border-radius: 50%;
+    border-radius: 5%;
     border: #16ff 3px solid; }
   .about-info .bio {
     grid-area: bio;
@@ -268,8 +268,8 @@ main {
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       background: url("../img/small_ytran.jpg");
-      width: 150px;
-      height: 100px; }
+      width: 175px;
+      height: 120px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
