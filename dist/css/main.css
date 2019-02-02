@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #000;
+    background: #fff;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -40,23 +40,23 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #6a6a6a;
+    background: #262626;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #777;
+    background: #333;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 330px;
+      width: 310px;
       height: 240px;
       background: url("../img/ytran.jpg");
-      border-radius: 60%;
+      border-radius: 5%;
       border: solid 3px #16ff; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -72,7 +72,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -94,8 +94,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #777;
-  color: #000;
+  background: #333;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -112,7 +112,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(119, 119, 119, 0.9); }
+      background: rgba(51, 51, 51, 0.9); }
 
 h1,
 h2,
@@ -128,7 +128,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(124, 124, 124, 0.5); }
+    background: rgba(56, 56, 56, 0.5); }
 
 a {
   color: #fff;
@@ -177,7 +177,7 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #848484;
+    background: #404040;
     padding: 0.5rem;
     border-bottom: #16ff 5px solid; }
 
@@ -210,7 +210,7 @@ main {
       background: #16ff;
       color: #000; }
       .boxes div:hover span {
-        color: #000; }
+        color: #fff; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -226,14 +226,14 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: #f7f7f7;
+  background: #b3b3b3;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #5e5e5e;
-  color: #000;
+  background: #1a1a1a;
+  color: #fff;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
@@ -267,8 +267,8 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      width: 150px;
-      height: 150px; }
+      width: 310px;
+      height: 240px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
