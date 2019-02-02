@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #262626;
+    background: #373737;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #333;
+    background: #444;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -94,7 +94,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #333;
+  background: #444;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -112,7 +112,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(51, 51, 51, 0.9); }
+      background: rgba(68, 68, 68, 0.9); }
 
 h1,
 h2,
@@ -128,7 +128,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(56, 56, 56, 0.5); }
+    background: rgba(73, 73, 73, 0.5); }
 
 a {
   color: #fff;
@@ -148,10 +148,10 @@ main {
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      padding: 0.4rem; }
+      padding: 0.4rem;
+      transition: all 0.5s ease-out; }
       main .icons a:hover {
-        color: #16ff;
-        transition: all 0.5s ease-out; }
+        color: #16ff; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -177,7 +177,7 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #404040;
+    background: #515151;
     padding: 0.5rem;
     border-bottom: #16ff 5px solid; }
 
@@ -210,7 +210,7 @@ main {
       background: #16ff;
       color: #000; }
       .boxes div:hover span {
-        color: #fff; }
+        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -226,13 +226,13 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: #b3b3b3;
+  background: #c4c4c4;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #1a1a1a;
+  background: #2b2b2b;
   color: #fff;
   height: 60px; }
 
@@ -261,14 +261,15 @@ main {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
     height: 75vh;
-    transform: translate(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      width: 310px;
-      height: 240px; }
+      background: url("../img/small_ytran.jpg");
+      width: 150px;
+      height: 100px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
@@ -276,7 +277,12 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; }
+  main {
+    padding: 2rem; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem; }
   .projects {
     grid-template-columns: 1fr; } }

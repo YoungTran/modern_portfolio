@@ -15,12 +15,10 @@ body {
     line-height: 1.5;
 }
 
-//headings
-
+// Headings
 h1,
 h2,
-h3,
-    {
+h3 {
     margin: 0;
     font-weight: 400;
 
@@ -52,7 +50,7 @@ header {
 
 main {
     padding: 4rem;
-    //height: 100%;
+    // height: 100%;
     min-height: calc(100vh - 60px);
 
     .icons {
@@ -60,10 +58,10 @@ main {
 
         a {
             padding: 0.4rem;
+            @include easeOut;
 
             &:hover {
                 color: $secondary-color;
-                @include easeOut();
             }
         }
     }
@@ -116,10 +114,7 @@ main {
     }
 }
 
-
-
-// Work/ Projects
-
+// Work/Projects
 .projects {
     display: grid;
     grid-gap: 0.7rem;
@@ -137,9 +132,7 @@ main {
     }
 }
 
-
-//Contact Page
-
+// Contact Page
 .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -160,14 +153,13 @@ main {
             color: set-text-color($secondary-color);
 
             span {
-                color: set-text-color($primary-color);
+                color: set-text-color($secondary-color);
             }
         }
     }
 }
 
-
-//Button Styles
+// Button Styles
 .btn {
     display: block;
     padding: 0.5rem 1rem;
@@ -177,7 +169,6 @@ main {
     &:hover {
         background: $secondary-color;
         color: set-text-color($secondary-color);
-
     }
 }
 
